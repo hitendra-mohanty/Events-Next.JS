@@ -133,7 +133,7 @@ const EventDetails = async ({ params }: { params: { slug: string } }) => {
                 <p>Be the first to book for this event!</p>
               )}
 
-              <BookEvent />
+              <BookEvent eventId={event._id} slug={event.slug} />
             </div>
           </aside>
         </div>
